@@ -56,13 +56,13 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Jowo<span>Kode</span></a></div>
+            <div class="logo"><a href="#">Mochi<span>Project</span></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#services" class="menu-btn">Services</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#teams" class="menu-btn">Project</a></li>
+                <li><a href="#about" class="menu-btn">Product</a></li>
+                <!-- <li><a href="#services" class="menu-btn">Services</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li> -->
+                <li><a href="#teams" class="menu-btn">Testimoni</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
                 <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                     Cek
@@ -80,11 +80,11 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1">Hallo, Dulur-dulur</div>
-                <div class="text-2"><span class="typing"></span></div>
-                <div class="text-3">Jowo<span>Kode</span> present</div>
-                <!-- <div class="text-1">Irham | Founder</div> -->
-                <a href="https://api.whatsapp.com/send?phone=6285708497317">Hire me</a>
+                <div class="text-2">Hi, Lovely</div>
+                <div class="text-3"><span class="typing"></span></div>
+                <!-- <div class="text-3"><span><span class="typing"></span></div> -->
+                <!-- <div class="text-1"><img src="<?= base_url('/omah/images/arrow-down-animated.gif'); ?>"></div> -->
+                <a href="https://api.whatsapp.com/send?phone=6285708497317"><i class="fa fa-whatsapp"></i> Order Now</a>
             </div>
         </div>
     </section>
@@ -92,7 +92,7 @@
     <!-- about section start -->
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">About</h2>
+            <h2 class="title">Product</h2>
             <div class="about-content">
                 <div class="column left">
                     <img src="<?= base_url() . 'theme/images/' . $about_img; ?>">
@@ -107,7 +107,7 @@
     </section>
 
     <!-- services section start -->
-    <section class="services" id="services">
+    <!-- <section class="services" id="services">
         <div class="max-width">
             <h2 class="title">Our services</h2>
             <div class="serv-content">
@@ -115,28 +115,24 @@
                     <div class="box">
                         <i class="fa fa-paint-brush"></i>
                         <div class="text">Web Design</div>
-                        <!-- <p>Web Desain adalah istilah yang sering digunakan untuk menggambarkan bagaimana tampilan isi suatu website atau situs. Web yang kami bangun kami sesuaikan dengan kaidah dan kebutuhan customer secara personal maupun instansi.</p> -->
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <i class="fa fa-chart-line"></i>
-                        <!-- <i class="fa fa-code"></i> -->
                         <div class="text">Advertising</div>
-                        <!-- <p>Advertising adalah salah satu bentuk komunikasi komersil maupun non komersil dengan tujuan agar khalayak memahami, mengikuti, atau mengambil tindakan tertentu. Web dikembangkan atas dasar interaksi sosial melalui sarana media website.</p> -->
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <i class="fa fa-code"></i>
                         <div class="text">Graphical Design</div>
-                        <!-- <p>Desain Grafis adalah proses komunikasi menggunakan elemen visual yang dimaksudkan untuk menciptakan persepsi akan suatu pesan yang disampaikan. Web yang dibuat tentu akan memperhatikan kesesuaian dan estetika yg disuguhkan.</p> -->
                     </div>
                 </div>
             </div>
         </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- skills section start -->
     <section class="skills" id="skills">
@@ -192,7 +188,7 @@
     <!-- teams section start -->
     <section class="teams" id="teams">
         <div class="max-width">
-            <h2 class="title">Project</h2>
+            <h2 class="title">Testimonials</h2>
             <div class="carousel owl-carousel">
                 <?php foreach ($testimonial->result() as $test) : ?>
                     <div class="card">
@@ -217,34 +213,34 @@
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
-                    <p>Ayo dulur, kalo kalian tertarik untuk mengembangkan web atau mau tanya-tanya dulu. Langsung wae hubungi lewat medsos iki utawa form message!</p>
+                    <!-- <p>Ayo dulur, kalo kalian tertarik untuk mengembangkan web atau mau tanya-tanya dulu. Langsung wae hubungi lewat medsos iki utawa form message!</p> -->
                     <div class="icons">
                         <div class="row">
                             <i class="fa fa-instagram"></i>
                             <div class="info">
                                 <div class="head">Instagram</div>
-                                <div class="sub-title">instagram.com/bro_irham</div>
+                                <div class="sub-title">instagram.com/</div>
                             </div>
                         </div>
                         <div class="row">
                             <i class="fa fa-twitter"></i>
                             <div class="info">
                                 <div class="head">Twitter</div>
-                                <div class="sub-title">twitter.com/bro_irham</div>
+                                <div class="sub-title">twitter.com/</div>
                             </div>
                         </div>
                         <div class="row">
-                            <i class="fa fa-youtube"></i>
+                            <i class="fa fa-facebook"></i>
                             <div class="info">
-                                <div class="head">Youtube</div>
-                                <div class="sub-title">Ircham Ali</div>
+                                <div class="head">Facebook</div>
+                                <div class="sub-title">facebook.com/</div>
                             </div>
                         </div>
                         <div class="row">
                             <i class="fa fa-envelope"></i>
                             <div class="info">
-                                <div class="head">Email ku</div>
-                                <div class="sub-title">id.irchamali@gmail.com</div>
+                                <div class="head">Email</div>
+                                <div class="sub-title">mochi@gmail.com</div>
                             </div>
                         </div>
                         <!-- <div class="row">

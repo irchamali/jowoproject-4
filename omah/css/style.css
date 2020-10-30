@@ -71,7 +71,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: #4070F4;
+    color: #fe4ea8;
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -88,7 +88,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background:  #111;
+    background:  #fff;
 }
 .navbar .max-width{
     display: flex;
@@ -96,16 +96,16 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo a{
-    color: #fff;
+    color: #fe4ea8;
     font-size: 35px;
     font-weight: 600;
 }
 .navbar .logo a span{
-    color: #ffff00;
+    color: #111;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
-    color: #fff;
+    color: #111;
 }
 .navbar .menu li{
     list-style: none;
@@ -113,22 +113,22 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: #fff;
+    color: #111;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color:  #ffff00;
+    color:  #fe4ea8;
 }
 .navbar.sticky .menu li a:hover{
-    color: #ffff00;
+    color: #fe4ea8;
 }
 
 /* menu btn styling */
 .menu-btn{
-    color: #fff;
+    color: #fe4ea8;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -165,9 +165,9 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("../images/banner-mochi.jpg") no-repeat center;
+    background: url("../images/mochi-1.jpg") no-repeat center;
     height: 100vh;
-    color: #fff;
+    color: #111;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
@@ -189,23 +189,23 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: #ffff00;
+    color: #fe4ea8;
     font-weight: 500;
 }
 .home .home-content a{
     display: inline-block;
-    background: #ffff00;
-    color: #111;
+    background: #61ce70;
+    color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid #ffff00;
+    border: 2px solid #61ce70;
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: #ffff00;
+    color: #61ce70;
     background: none;
 }
 
@@ -231,7 +231,7 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: #4070F4;
+    color: #fe4ea8;
 }
 .about .about-content .right p{
     text-align: justify;
@@ -245,7 +245,7 @@ section .title::after{
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid #4070F4;
+    border: 2px solid #fe4ea8;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
@@ -256,7 +256,7 @@ section .title::after{
 /* services section styling */
 .services, .teams{
     color:#fff;
-    background: #111;
+    background: #fff;
 }
 .services .title::before,
 .teams .title::before{
@@ -277,7 +277,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: #4070F4;
+    background: #fe4ea8;
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -324,11 +324,11 @@ section .title::after{
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid  #4070F4;
+    border: 2px solid  #fe4ea8;
     transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
-    color:  #4070F4;
+    color:  #fe4ea8;
     background: none;
 }
 .skills .skills-content .right .bars{
@@ -356,7 +356,7 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background:  #4070F4;
+    background:  #fe4ea8;
 }
 .skills-content .right .html::before{
     width: 90%;
@@ -387,7 +387,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover{
-    background:  #4070F4;
+    background:  #fe4ea8;
 }
 .teams .carousel .card .box{
     display: flex;
@@ -439,7 +439,7 @@ section .title::after{
 
 /* contact section styling */
 .contact .title::after{
-    content: "hubungi aku rek";
+    content: "pesan ke kami";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -465,7 +465,7 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: #4070F4;
+    color: #fe4ea8;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -519,8 +519,8 @@ section .title::after{
 .contact .right form .button button{
     width: 100%;
     height: 100%;
-    border: 2px solid #4070F4;
-    background: #111;
+    border: 2px solid #fe4ea8;
+    background: #fe4ea8;
     color: #fff;
     outline: none;
     font-size: 20px;
@@ -530,13 +530,13 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .contact .right form .button button:hover{
-    color: #4070F4;
+    color: #fe4ea8;
     background: none;
 }
 
 /* footer section styling */
 footer{
-    background: #111;
+    background: #fe4ea8;
     padding: 15px 23px;
     color: #fff;
     text-align: center;
@@ -583,7 +583,7 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111;
+        background: #fff;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;

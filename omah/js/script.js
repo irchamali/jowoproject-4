@@ -35,7 +35,7 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Sugeng Rawuh", "Selamat Datang", "Welcome Home"],
+        strings: ["Special Gift with Love", "We are Mochi Project"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
