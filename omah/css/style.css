@@ -388,7 +388,7 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
-    content: "who our partner";
+    content: "special gift";
 }
 .teams .carousel .card{
     background: #222;

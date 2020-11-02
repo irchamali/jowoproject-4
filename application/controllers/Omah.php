@@ -26,12 +26,17 @@ class Omah extends CI_Controller
         $data['post_header_3'] = $this->zome_model->get_post_header_3();
         $data['latest_post'] = $this->zome_model->get_latest_post();
         $data['popular_post'] = $this->zome_model->get_popular_post();
-        $home = $this->db->get('tbl_home', 1)->row();
 
+        $home = $this->db->get('tbl_home', 1)->row();
+        $data['name_1'] = $home->home_name_1;
+        $data['name_2'] = $home->home_name_2;
+        $data['name_3'] = $home->home_name_3;
         $data['caption_1'] = $home->home_caption_1;
         $data['caption_2'] = $home->home_caption_2;
-        $data['bg_header'] = $home->home_bg_heading;
-        $data['bg_testimoni'] = $home->home_bg_testimonial;
+        $data['caption_3'] = $home->home_caption_3;
+        $data['bg_1'] = $home->home_bg_1;
+        $data['bg_2'] = $home->home_bg_2;
+        $data['bg_3'] = $home->home_bg_3;
 
         $data['testimonial'] = $this->db->get('tbl_testimonial');
         $site_info = $this->db->get('tbl_site', 1)->row();

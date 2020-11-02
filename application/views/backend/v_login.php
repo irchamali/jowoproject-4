@@ -11,7 +11,7 @@
     <meta name="keywords" content="" />
     <meta name="author" content="Ircham Ali" />
     <meta name="robots" content="noindex, nofollow">
-    <link rel="shortcut icon" href="<?php echo base_url() . 'assets/images/favicon_pmii.png' ?>">
+    <link rel="shortcut icon" href="<?php echo base_url() . 'assets/images/favpink.png' ?>">
     <!-- Styles -->
     <link href="<?php echo base_url() . 'assets/plugins/pace-master/themes/blue/pace-theme-flash.css' ?>" rel="stylesheet" />
     <link href="<?php echo base_url() . 'assets/plugins/uniform/css/uniform.default.min.css' ?>" rel="stylesheet" />
@@ -54,7 +54,7 @@
                                 <button type="submit" class="btn btn-success btn-block">Login</button>
 
                             </form>
-                            <p class="text-center m-t-xs text-sm"><?php echo date('Y'); ?> &copy; JowoKode by Ircham Ali.</p>
+                            <p class="text-center m-t-xs text-sm"><?php echo date('Y'); ?> &copy; DekorasiDinding by JowoKode.</p>
                         </div>
                     </div>
                 </div><!-- Row -->

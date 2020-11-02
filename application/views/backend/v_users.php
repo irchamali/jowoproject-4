@@ -11,7 +11,7 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="Ircham Ali" />
-    <link rel="shortcut icon" href="<?php echo base_url() . 'assets/images/favicon_pmii.png' ?>">
+    <link rel="shortcut icon" href="<?php echo base_url() . 'assets/images/favpink.png' ?>">
     <!-- Styles -->
     <link href="<?php echo base_url() . 'assets/plugins/pace-master/themes/blue/pace-theme-flash.css' ?>" rel="stylesheet" />
     <link href="<?php echo base_url() . 'assets/plugins/uniform/css/uniform.default.min.css' ?>" rel="stylesheet" />
@@ -52,7 +52,7 @@
                     </a>
                 </div>
                 <div class="logo-box">
-                    <a href="<?php echo site_url('backend/dashboard'); ?>" class="logo-text"><span>BABAD</span></a>
+                    <a href="<?php echo site_url('backend/dashboard'); ?>" class="logo-text"><span>MOCHI</span></a>
                 </div><!-- Logo Box -->
                 <div class="search-button">
                     <a href="javascript:void(0);" class="waves-effect waves-button waves-classic show-search"><i class="fa fa-search"></i></a>

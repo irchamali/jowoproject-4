@@ -10,7 +10,7 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="Ircham Ali" />
-    <link rel="shortcut icon" href="<?php echo base_url() . 'assets/images/favicon_pmii.png' ?>">
+    <link rel="shortcut icon" href="<?php echo base_url() . 'assets/images/favpink.png' ?>">
 
     <!-- Styles -->
     <link href="<?php echo base_url() . 'assets/plugins/pace-master/themes/blue/pace-theme-flash.css' ?>" rel="stylesheet" />
@@ -48,7 +48,7 @@
                     </a>
                 </div>
                 <div class="logo-box">
-                    <a href="<?php echo site_url('backend/dashboard'); ?>" class="logo-text"><span>BABAD</span></a>
+                    <a href="<?php echo site_url('backend/dashboard'); ?>" class="logo-text"><span>MOCHI</span></a>
                 </div><!-- Logo Box -->
                 <div class="search-button">
                     <a href="javascript:void(0);" class="waves-effect waves-button waves-classic show-search"><i class="fa fa-search"></i></a>
@@ -267,36 +267,66 @@
                             <div class="panel panel-white">
 
                                 <div class="panel-body">
-
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Name 1</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="name1" class="form-control" id="input1" value="<?php echo $name_1; ?>" placeholder="Product Name">
+                                        </div>
+                                    </div>
                                     <div class="form-group">
                                         <label for="input1" class="col-sm-2 control-label">Caption 1</label>
                                         <div class="col-sm-10">
-                                            <input type="text" name="caption1" class="form-control" id="input1" value="<?php echo $caption_1; ?>" placeholder="Site Name">
+                                            <input type="text" name="caption1" class="form-control" id="input1" value="<?php echo $caption_1; ?>" placeholder="Product Caption">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Image 1</label>
+                                        <div class="col-sm-10">
+                                            <input type="file" name="img_1" class="form-control" id="input1">
+                                            <p class="help-block">Image Heading harus beresolusi 1000 x 1000 Pixels.</p>
+                                            <img src="<?php echo base_url() . 'theme/images/' . $image_1; ?>" width="560" class="thumbnail">
                                         </div>
                                     </div>
 
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Name 2</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="name2" class="form-control" id="input1" value="<?php echo $name_2; ?>" placeholder="Product Name">
+                                        </div>
+                                    </div>
                                     <div class="form-group">
                                         <label for="input1" class="col-sm-2 control-label">Caption 2</label>
                                         <div class="col-sm-10">
-                                            <input type="text" name="caption2" class="form-control" id="input1" value="<?php echo $caption_2; ?>" placeholder="Site Title">
+                                            <input type="text" name="caption2" class="form-control" id="input1" value="<?php echo $caption_2; ?>" placeholder="Product Caption">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Image 2</label>
+                                        <div class="col-sm-10">
+                                            <input type="file" name="img_2" class="form-control" id="input1">
+                                            <p class="help-block">Image Heading harus beresolusi 1000 x 1000 Pixels.</p>
+                                            <img src="<?php echo base_url() . 'theme/images/' . $image_2; ?>" width="560" class="thumbnail">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Image Heading</label>
+                                        <label for="input1" class="col-sm-2 control-label">Name 3</label>
                                         <div class="col-sm-10">
-                                            <input type="file" name="img_heading" class="form-control" id="input1">
-                                            <p class="help-block">Image Heading harus beresolusi 1800 x 1110 Pixels.</p>
-                                            <img src="<?php echo base_url() . 'theme/images/' . $image_heading; ?>" width="560" class="thumbnail">
+                                            <input type="text" name="name3" class="form-control" id="input1" value="<?php echo $name_3; ?>" placeholder="Product Name">
                                         </div>
                                     </div>
-
                                     <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Background Testimonial</label>
+                                        <label for="input1" class="col-sm-2 control-label">Caption 3</label>
                                         <div class="col-sm-10">
-                                            <input type="file" name="img_testimonial" class="form-control" id="input1">
-                                            <p class="help-block">Background Testimonial harus beresolusi 925 x 617 Pixels.</p>
-                                            <img src="<?php echo base_url() . 'theme/images/' . $image_testimonial; ?>" width="560" class="thumbnail">
+                                            <input type="text" name="caption3" class="form-control" id="input1" value="<?php echo $caption_3; ?>" placeholder="Product Caption">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Image 3</label>
+                                        <div class="col-sm-10">
+                                            <input type="file" name="img_3" class="form-control" id="input1">
+                                            <p class="help-block">Background Testimonial harus beresolusi 1000 x 1000 Pixels.</p>
+                                            <img src="<?php echo base_url() . 'theme/images/' . $image_3; ?>" width="560" class="thumbnail">
                                         </div>
                                     </div>
 
@@ -306,11 +336,9 @@
                                             <button type="submit" class="btn btn-success btn-lg">UPDATE</button>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
-
 
                     </form>
                 </div><!-- Row -->

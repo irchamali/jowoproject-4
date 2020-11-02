@@ -109,7 +109,7 @@
     <!-- Seksi baru ini -->
     <section class="teams" id="teams">
         <div class="max-width">
-            <h2 class="title">Dekorasi Dinding</h2>
+            <h2 class="title">Ambalan Dinding</h2>
             <div class="split">
                 <?php foreach ($testimonial->result() as $test) : ?>
                     <div class="featured__item">
@@ -133,21 +133,21 @@
         </div><br>
         <div class="max-width">
             <article class="product shoe-red spacing">
-                <img src="<?= base_url() . 'theme/images/' . $about_img; ?>" alt="" class="product__image">
-                <h3 class="product__title"><?php echo $test->testimonial_content; ?></h3>
-                <p class="product__description"><?= $about_desc; ?></p>
+                <img src="<?= base_url() . 'theme/images/' . $bg_1; ?>" alt="" class="product__image">
+                <h3 class="product__title"><?= $name_1; ?></h3>
+                <p class="product__description"><?= $caption_1; ?></p>
                 <a href="" class="btn">Order now</a>
             </article>
             <article class="product shoe-white shoe-left spacing">
-                <img src="<?= base_url() . 'theme/images/' . $about_img; ?>" alt="" class="product__image">
-                <h3 class="product__title">A really nice frame</h3>
-                <p class="product__description"><?= $about_desc; ?></p>
+                <img src="<?= base_url() . 'theme/images/' . $bg_2; ?>" alt="" class="product__image">
+                <h3 class="product__title"><?= $name_2; ?></h3>
+                <p class="product__description"><?= $caption_2; ?></p>
                 <a href="" class="btn">Order now</a>
             </article>
             <article class="product shoe-blue spacing">
-                <img src="<?php echo base_url() . 'theme/images/' . $bg_testimoni; ?>" alt="" class="product__image">
-                <h3 class="product__title"><?php echo $caption_1; ?></h3>
-                <p class="product__description"><?= $about_desc; ?></p>
+                <img src="<?= base_url() . 'theme/images/' . $bg_3; ?>" alt="" class="product__image">
+                <h3 class="product__title"><?= $name_3; ?></h3>
+                <p class="product__description"><?= $caption_3; ?></p>
                 <a href="" class="btn">Order now</a>
             </article>
         </div>
