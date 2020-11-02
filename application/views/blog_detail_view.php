@@ -64,8 +64,7 @@
 
 		<!-- Main Content
 			==================================================-->
-		<main class="cd-main-content mt-100">
-
+		<main class="cd-main-content mt-50">
 
 
 			<!-- SECTION ABOUT
@@ -94,7 +93,6 @@
 									<span class="separator">&vert;</span>
 									<span><a href="javascript:void(0)"><i class="fa fa-comments"></i> <?php echo number_format($comment); ?> Comments</a></span>
 								</div>
-
 
 								<!--POST MEDIA-->
 								<div class="blog-media">
@@ -126,12 +124,12 @@
 
 
 								<!--POST COMMENT-->
-								<div class="comments-heading text-center mb-30 mt-60">
+								<!-- <div class="comments-heading text-center mb-30 mt-60">
 									<hgroup>
 										<h2 class="font-face1 section-heading"><?php echo $comment; ?> Comments</h2>
 
 									</hgroup>
-								</div>
+								</div> -->
 
 								<!-- Comment First level -->
 								<ul class="comments-list mb-100 mb-md-80 mb-sm-60 clearfix">
@@ -154,11 +152,11 @@
 												</div>
 											</div>
 											<!-- Comment children second level -->
-											<?php
-											$comment_id = $row->comment_id;
-											$query = $this->db->query("SELECT * FROM tbl_comment WHERE comment_status='1' AND comment_parent='$comment_id'");
-											foreach ($query->result() as $i) :
-											?>
+											<!-- <?php
+													$comment_id = $row->comment_id;
+													$query = $this->db->query("SELECT * FROM tbl_comment WHERE comment_status='1' AND comment_parent='$comment_id'");
+													foreach ($query->result() as $i) :
+													?>
 												<ul class="children">
 													<li class="comment">
 														<div class="comment-body clearfix">
@@ -178,9 +176,9 @@
 															</div>
 														</div>
 													</li>
-												</ul>
-												<!-- Comment children second level -->
-											<?php endforeach; ?>
+												</ul> -->
+											<!-- Comment children second level -->
+										<?php endforeach; ?>
 
 										</li>
 									<?php endforeach; ?>
@@ -189,7 +187,7 @@
 								<!-- End Comment First level -->
 
 								<!--POST LEAVE COMMENT-->
-								<div class="comments-heading text-center mb-30">
+								<!-- <div class="comments-heading text-center mb-30">
 									<hgroup>
 										<h2 class="font-face1 section-heading">Leave a comment</h2>
 									</hgroup>
@@ -220,11 +218,9 @@
 											</button>
 										</div>
 									</div>
-								</form>
+								</form> -->
 								<!--END POST LEAVE COMMENT-->
-
 							</div>
-
 						</div>
 					</div>
 				</div>
@@ -232,7 +228,7 @@
 
 			<!-- SECTION SUBSCRIBE
 				================================================== -->
-			<section class="page-section subscribe-section small-section">
+			<!-- <section class="page-section subscribe-section small-section">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1">
@@ -254,7 +250,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 
 			<hr class="nomargin nopadding" />
