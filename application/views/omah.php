@@ -85,7 +85,7 @@
                 <div class="text-3"><span class="typing"></span></div>
                 <!-- <div class="text-3"><span><span class="typing"></span></div> -->
                 <!-- <div class="text-1"><img src="<?= base_url('/omah/images/arrow-down-animated.gif'); ?>"></div> -->
-                <a href="https://api.whatsapp.com/send?phone=6285708497317"><i class="fa fa-whatsapp"></i> Order Now</a>
+                <a href="https://api.whatsapp.com/send?phone=085730110225"><i class="fa fa-whatsapp"></i> Order Now</a>
             </div>
         </div>
     </section>
@@ -109,7 +109,7 @@
     <!-- Seksi baru ini -->
     <section class="teams" id="teams">
         <div class="max-width">
-            <h2 class="title">Ambalan Dinding</h2>
+            <h2 class="title">Dekorasi Dinding</h2>
             <div class="split">
                 <?php foreach ($testimonial->result() as $test) : ?>
                     <div class="featured__item">

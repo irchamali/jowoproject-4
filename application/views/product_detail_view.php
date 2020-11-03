@@ -24,12 +24,12 @@
 	<link rel="stylesheet" href="<?php echo base_url() . 'theme/css/font-awesome.min.css' ?>" />
 	<!-- SEO Tags -->
 	<meta name="description" content="<?php echo $description; ?>" />
-	<link rel="canonical" href="<?php echo site_url('blog/' . $slug); ?>" />
+	<link rel="canonical" href="<?php echo site_url('product/' . $slug); ?>" />
 	<meta property="og:locale" content="id_ID" />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content="<?php echo $title; ?>" />
 	<meta property="og:description" content="<?php echo $description; ?>" />
-	<meta property="og:url" content="<?php echo site_url('blog/' . $slug); ?>" />
+	<meta property="og:url" content="<?php echo site_url('product/' . $slug); ?>" />
 	<meta property="og:site_name" content="<?php echo $site_name; ?>" />
 	<meta property="article:publisher" content="<?php echo $site_facebook; ?>" />
 	<meta property="article:section" content="<?php echo $category; ?>" />
@@ -124,12 +124,12 @@
 
 
 								<!--POST COMMENT-->
-								<!-- <div class="comments-heading text-center mb-30 mt-60">
+								<div class="comments-heading text-center mb-30 mt-60">
 									<hgroup>
 										<h2 class="font-face1 section-heading"><?php echo $comment; ?> Comments</h2>
 
 									</hgroup>
-								</div> -->
+								</div>
 
 								<!-- Comment First level -->
 								<ul class="comments-list mb-100 mb-md-80 mb-sm-60 clearfix">
@@ -152,11 +152,11 @@
 												</div>
 											</div>
 											<!-- Comment children second level -->
-											<!-- <?php
-													$comment_id = $row->comment_id;
-													$query = $this->db->query("SELECT * FROM tbl_comment WHERE comment_status='1' AND comment_parent='$comment_id'");
-													foreach ($query->result() as $i) :
-													?>
+											<?php
+											$comment_id = $row->comment_id;
+											$query = $this->db->query("SELECT * FROM tbl_comment WHERE comment_status='1' AND comment_parent='$comment_id'");
+											foreach ($query->result() as $i) :
+											?>
 												<ul class="children">
 													<li class="comment">
 														<div class="comment-body clearfix">
@@ -176,9 +176,9 @@
 															</div>
 														</div>
 													</li>
-												</ul> -->
-											<!-- Comment children second level -->
-										<?php endforeach; ?>
+												</ul>
+												<!-- Comment children second level -->
+											<?php endforeach; ?>
 
 										</li>
 									<?php endforeach; ?>
@@ -187,9 +187,9 @@
 								<!-- End Comment First level -->
 
 								<!--POST LEAVE COMMENT-->
-								<!-- <div class="comments-heading text-center mb-30">
+								<div class="comments-heading text-center mb-30">
 									<hgroup>
-										<h2 class="font-face1 section-heading">Leave a comment</h2>
+										<h2 class="font-face1 section-heading">Leave a comment aja</h2>
 									</hgroup>
 								</div>
 								<?php echo $this->session->flashdata('msg'); ?>
@@ -218,7 +218,7 @@
 											</button>
 										</div>
 									</div>
-								</form> -->
+								</form>
 								<!--END POST LEAVE COMMENT-->
 							</div>
 						</div>
@@ -239,7 +239,7 @@
 								<div class="col-sm-6">
 									<form class="form-inline" action="<?php echo site_url('subscribe'); ?>" method="post">
 										<div class="form-group">
-											<input type="hidden" name="url" value="<?php echo site_url('blog/' . $slug); ?>" required>
+											<input type="hidden" name="url" value="<?php echo site_url('product/' . $slug); ?>" required>
 											<input type="email" name="email" required placeholder="Your Email..." class="form-control">
 											<button type="submit" class="btn btn-subscribe bg-white">Subscribe</button>
 										</div>

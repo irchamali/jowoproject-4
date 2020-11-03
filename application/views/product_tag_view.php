@@ -7,6 +7,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
 	<link rel="shortcut icon" href="<?php echo base_url('theme/images/' . $icon); ?>">
+	<!-- SEO Tags -->
+	<meta name="description" content="<?php echo $description; ?>" />
+	<link rel="canonical" href="<?php echo $canonical; ?>" />
+	<?php error_reporting(0);
+	if (empty($url_prev)) : ?>
+	<?php else : ?>
+		<link rel="prev" href="<?php echo $url_prev; ?>" />
+	<?php endif; ?>
+	<link rel="next" href="<?php echo $url_next; ?>" />
+	<meta property="og:locale" content="id_ID" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="<?php echo $judul; ?>" />
+	<meta property="og:description" content="<?php echo $description; ?>" />
+	<meta property="og:url" content="<?php echo $canonical; ?>" />
+	<meta property="og:site_name" content="<?php echo $site_name; ?>" />
+	<meta property="og:image" content="<?php echo base_url() . 'theme/images/' . $site_image ?>" />
+	<meta property="og:image:secure_url" content="<?php echo base_url() . 'theme/images/' . $site_image ?>" />
+	<meta property="og:image:width" content="560" />
+	<meta property="og:image:height" content="315" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:description" content="<?php echo $description; ?>" />
+	<meta name="twitter:title" content="<?php echo $judul; ?>" />
+	<meta name="twitter:site" content="<?php echo $site_twitter; ?>" />
+	<meta name="twitter:image" content="<?php echo base_url() . 'theme/images/' . $site_image ?>" />
+	<!-- / SEO plugin. -->
 	<!-- CSS -->
 	<link rel="stylesheet" href="<?php echo base_url() . 'theme/css/bootstrap.min.css' ?>" />
 	<link rel="stylesheet" href="<?php echo base_url() . 'theme/css/style.css' ?>" />
@@ -49,14 +74,13 @@
 						<?php foreach ($data->result() as $row) : ?>
 							<div class="col-md-4 col-sm-6 mb-30 wow fadeIn">
 								<article>
-									<a class="articles-card" href="<?php echo site_url('blog/' . $row->post_slug); ?>" title="">
+									<a class="articles-card" href="<?php echo site_url('product/' . $row->post_slug); ?>" title="">
 										<div class="card-wrap">
 											<div class="card-image">
 												<div class="article-thumbnail" data-background="<?php echo base_url() . 'assets/images/thumb/' . $row->post_image; ?>"></div>
 											</div>
 											<div class="card-body text-right">
 												<h2 class="heading6 lp-0 mt-0 font-face1 text-right"><?php echo $row->post_title; ?></h2>
-												<span class="icon-arrow-right fa fa-chevron-right"></span>
 											</div>
 											<div class="card-footer">
 												<div class="article_author">
@@ -91,7 +115,7 @@
 								<div class="col-sm-6">
 									<form class="form-inline" action="<?php echo site_url('subscribe'); ?>" method="post">
 										<div class="form-group">
-											<input type="hidden" name="url" value="<?php echo site_url('blog'); ?>" required>
+											<input type="hidden" name="url" value="<?php echo $canonical; ?>" required>
 											<input type="email" name="email" required placeholder="Your Email..." class="form-control">
 											<button type="submit" class="btn btn-subscribe bg-white">Subscribe</button>
 										</div>

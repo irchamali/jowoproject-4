@@ -28,7 +28,7 @@
 
     <!-- Theme Styles -->
     <link href="<?php echo base_url() . 'assets/css/modern.min.css' ?>" rel="stylesheet" type="text/css" />
-    <link href="<?php echo base_url() . 'assets/css/themes/green.css' ?>" class="theme-color" rel="stylesheet" type="text/css" />
+    <link href="<?php echo base_url() . 'assets/css/themes/pink.css' ?>" class="theme-color" rel="stylesheet" type="text/css" />
 
     <script src="<?php echo base_url() . 'assets/plugins/3d-bold-navigation/js/modernizr.js' ?>"></script>
     <script src="<?php echo base_url() . 'assets/plugins/offcanvasmenueffects/js/snap.svg-min.js' ?>"></script>
@@ -307,7 +307,7 @@
                                                             </ul>
                                                         </div>
                                                     </div>
-                                                    <h3 class="no-m"><a href="<?php echo site_url('blog/' . $row->post_slug); ?>" target="_blank"><?php echo $row->post_title; ?></a></h3>
+                                                    <h3 class="no-m"><a href="<?php echo site_url('product/' . $row->post_slug); ?>" target="_blank"><?php echo $row->post_title; ?></a></h3>
                                                     <a href="javascript:void(0);" class="search-link"><b><?php echo $row->comment_name ?></b>, <?php echo $row->comment_date; ?></a> <?php if ($row->comment_status == '0') {
                                                                                                                                                                                             echo "<span class='label label-danger'>Unpublish</span>";
                                                                                                                                                                                         } else {
@@ -347,7 +347,7 @@
                                                                     </ul>
                                                                 </div>
                                                             </div>
-                                                            <h3 class="no-m"><a href="<?php echo site_url('blog/' . $row->post_slug); ?>" target="_blank"><?php echo $row->post_title; ?></a></h3>
+                                                            <h3 class="no-m"><a href="<?php echo site_url('product/' . $row->post_slug); ?>" target="_blank"><?php echo $row->post_title; ?></a></h3>
                                                             <a href="javascript:void(0);" class="search-link"><b><?php echo $row->comment_name ?></b>, <?php echo $row->comment_date; ?></a>
                                                             <div style="margin-left: 7%;">
                                                                 <p><?php echo $row->comment_message; ?></p>

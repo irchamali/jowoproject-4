@@ -50,9 +50,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'omah';
-$route['blog/(:any)'] = 'blog/detail/$1';
-$route['blog/page/(:any)'] = 'blog/index/$1';
-$route['send_comment'] = 'blog/submit_komentar';
+$route['product/(:any)'] = 'product/detail/$1';
+$route['product/page/(:any)'] = 'product/index/$1';
+$route['send_comment'] = 'product/submit_komentar';
 $route['category/(:any)'] = 'category/detail/$1';
 $route['category/(:any)/(:num)'] = 'category/detail/$1/$2';
 $route['tag/(:any)'] = 'tag/detail/$1';

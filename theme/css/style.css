@@ -72,12 +72,12 @@ TABLE OF CONTENT
 	--bgdark: #212121;
 	--fontdark : #212121;
 	--bgcolor:#111;
-	--fontcolor:#ffff00;
+	--fontcolor:#fe4ea8;
 	--heading:38px;
 	--headingbold:14.5px;
 }
 
-	
+	 
 html{
 	overflow-y: scroll;
     -ms-overflow-style: scrollbar;
@@ -3820,7 +3820,7 @@ ul.page-numbers li > a:hover,ul.page-numbers li span.current {
 	margin-bottom:10px;
 }
 .form-subscribe p {
-    color: #ffff00;
+    color: #fe4ea8;
     font-size: 16px;
     margin-bottom: 0;
     padding-top: 8px;
@@ -3838,7 +3838,7 @@ ul.page-numbers li > a:hover,ul.page-numbers li span.current {
 	border: 0px;
     border-bottom: 1px dotted #ccc;
     box-shadow: none;
-    color: #ffff00;
+    color: #fe4ea8;
     display: block;
     font-size: 1.6rem;
     height: 50px;
@@ -3850,8 +3850,8 @@ ul.page-numbers li > a:hover,ul.page-numbers li span.current {
     resize: none;
 }
 .form-subscribe .form-inline .btn {
-    background-color: #ffff00;
-    border: 1px solid #ffff00(255,255,255,.6);
+    background-color: #fe4ea8;
+    border: 1px solid #fe4ea8(255,255,255,.6);
     border-radius: 4px;
     -webkit-border-radius: 4px;
     height: 50px;
@@ -3879,9 +3879,9 @@ ul.page-numbers li > a:hover,ul.page-numbers li span.current {
 }
 
 .form-subscribe .form-inline .btn:active,.form-subscribe .form-inline .btn:focus,.form-subscribe .form-inline .btn:hover{
-	background-color:#ffff00;
-	color:#ffff00;
-	border-color:#ffff00;
+	background-color:#fe4ea8;
+	color:#fe4ea8;
+	border-color:#fe4ea8;
 }
 
 
