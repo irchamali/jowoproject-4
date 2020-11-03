@@ -79,33 +79,34 @@
 							<div class="blog-item clearfix">
 
 								<!--POST TITLE-->
-								<h2 class="heading5 mt-0 font-face1 fw700"><?php echo $title; ?></h2>
-
-								<!--POST META-->
-								<div class="blog-item-meta font-face1">
-									<span><a href="javascript:void(0)"><i class="fa fa-calendar-o"></i> <?php echo date('d M Y', strtotime($date)); ?></a></span>
-									<span class="separator">&vert;</span>
-									<span><a href="javascript:void(0)"><i class="fa fa-user"></i> <?php echo $author; ?></a></span>
-									<span class="separator">&vert;</span>
-									<span><a href="<?php echo site_url('category/' . $category_slug); ?>"><i class="fa fa-folder-open"></i> <?php echo $category; ?></a></span>
-									<span class="separator">&vert;</span>
-									<span><a href="javascript:void(0)"><i class="fa fa-eye"></i> <?php echo number_format($views) . ' views'; ?></a></span>
-									<span class="separator">&vert;</span>
-									<span><a href="javascript:void(0)"><i class="fa fa-comments"></i> <?php echo number_format($comment); ?> Comments</a></span>
-								</div>
+								<div class="shadow-title shadow-gray unselectable parallax-1">About</div>
+								<h1 class="heading1 mt-0 font-face1 fw700"><?php echo $title; ?></h1>
 
 								<!--POST MEDIA-->
 								<div class="blog-media">
 									<img alt="" src="<?php echo base_url() . 'assets/images/' . $image; ?>">
 								</div>
 
+
 								<!--POST BODY-->
 								<div class="blog-item-body light-text clearfix">
 									<?php echo $content; ?>
-								</div>
+								</div><br>
 
 								<!--POST TAG-->
 								<div class="post-meta-section clearfix">
+									<!--POST META-->
+									<div class="blog-item-meta font-face1">
+										<span><a href="javascript:void(0)"><i class="fa fa-calendar-o"></i> <?php echo date('d M Y', strtotime($date)); ?></a></span>
+										<span class="separator">&vert;</span>
+										<span><a href="javascript:void(0)"><i class="fa fa-user"></i> <?php echo $author; ?></a></span>
+										<span class="separator">&vert;</span>
+										<span><a href="<?php echo site_url('category/' . $category_slug); ?>"><i class="fa fa-folder-open"></i> <?php echo $category; ?></a></span>
+										<span class="separator">&vert;</span>
+										<span><a href="javascript:void(0)"><i class="fa fa-eye"></i> <?php echo number_format($views) . ' views'; ?></a></span>
+										<!-- <span class="separator">&vert;</span>
+									<span><a href="javascript:void(0)"><i class="fa fa-comments"></i> <?php echo number_format($comment); ?> Comments</a></span> -->
+									</div>
 
 									<div class="float-left font-face1 post-meta-holder nomargin">TAGS &mdash;
 										<?php
@@ -124,15 +125,15 @@
 
 
 								<!--POST COMMENT-->
-								<div class="comments-heading text-center mb-30 mt-60">
+								<!-- <div class="comments-heading text-center mb-30 mt-60">
 									<hgroup>
 										<h2 class="font-face1 section-heading"><?php echo $comment; ?> Comments</h2>
 
 									</hgroup>
-								</div>
+								</div> -->
 
 								<!-- Comment First level -->
-								<ul class="comments-list mb-100 mb-md-80 mb-sm-60 clearfix">
+								<!-- <ul class="comments-list mb-100 mb-md-80 mb-sm-60 clearfix">
 									<?php foreach ($show_comments->result() as $row) : ?>
 										<li class="comment">
 											<div class="comment-body clearfix">
@@ -150,13 +151,13 @@
 												<div class="comment-inner light-text">
 													<p><?php echo $row->comment_message; ?></p>
 												</div>
-											</div>
-											<!-- Comment children second level -->
-											<?php
-											$comment_id = $row->comment_id;
-											$query = $this->db->query("SELECT * FROM tbl_comment WHERE comment_status='1' AND comment_parent='$comment_id'");
-											foreach ($query->result() as $i) :
-											?>
+											</div> -->
+								<!-- Comment children second level -->
+								<!-- <?php
+										$comment_id = $row->comment_id;
+										$query = $this->db->query("SELECT * FROM tbl_comment WHERE comment_status='1' AND comment_parent='$comment_id'");
+										foreach ($query->result() as $i) :
+										?>
 												<ul class="children">
 													<li class="comment">
 														<div class="comment-body clearfix">
@@ -176,18 +177,18 @@
 															</div>
 														</div>
 													</li>
-												</ul>
-												<!-- Comment children second level -->
-											<?php endforeach; ?>
+												</ul> -->
+								<!-- Comment children second level -->
+								<!-- <?php endforeach; ?>
 
 										</li>
 									<?php endforeach; ?>
 
-								</ul>
+								</ul> -->
 								<!-- End Comment First level -->
 
 								<!--POST LEAVE COMMENT-->
-								<div class="comments-heading text-center mb-30">
+								<!-- <div class="comments-heading text-center mb-30">
 									<hgroup>
 										<h2 class="font-face1 section-heading">Leave a comment aja</h2>
 									</hgroup>
@@ -218,8 +219,8 @@
 											</button>
 										</div>
 									</div>
-								</form>
-								<!--END POST LEAVE COMMENT-->
+								</form> -->
+
 							</div>
 						</div>
 					</div>
