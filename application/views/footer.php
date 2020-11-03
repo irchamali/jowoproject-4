@@ -4,8 +4,7 @@
 						<div class="caption fw300">Made with <i class="lnr lnr-heart"></i> by <a href="https://jowokode.com" target="_blank">JowoKode</a></div>
 						<!-- ACROLL TO TOP-->
 						<div class="top-button">
-							<i class="fa fa-arrow-circle-o-up fa-3x">
-								<!-- <h1>Top</h1> -->
+							<i class="fa fa-chevron-circle-up fa-3x"></i>
 							</i>
 							<div class="line"></div>
 						</div>

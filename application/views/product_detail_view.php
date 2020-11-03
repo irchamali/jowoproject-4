@@ -80,7 +80,7 @@
 
 								<!--POST TITLE-->
 								<div class="shadow-title shadow-gray unselectable parallax-1">About</div>
-								<h1 class="heading1 mt-0 font-face1 fw700"><?php echo $title; ?></h1>
+								<h1 class="heading1 mt-0 font-face1 fw700"><?php echo $title; ?></h1><br>
 
 								<!--POST MEDIA-->
 								<div class="blog-media">
@@ -91,7 +91,13 @@
 								<!--POST BODY-->
 								<div class="blog-item-body light-text clearfix">
 									<?php echo $content; ?>
-								</div><br>
+									<div class="text-center">
+
+										<img src="<?= base_url('omah/images/arrow-down-animated.gif'); ?>" width="145" height="40" alt="gif">
+										<br><button class="btn bg-white"><i class="fa fa-whatsapp"></i> ORDER Sekarang</button>
+									</div>
+								</div><br><br>
+
 
 								<!--POST TAG-->
 								<div class="post-meta-section clearfix">
@@ -120,9 +126,7 @@
 									<div class="float-right">
 										<div class="SocialShareArticle" style="color: #fff;font-size: 10px;"></div>
 									</div>
-
 								</div>
-
 
 								<!--POST COMMENT-->
 								<!-- <div class="comments-heading text-center mb-30 mt-60">
@@ -318,12 +322,20 @@
 						label: "Facebook"
 					},
 					{
+						share: "messenger",
+						label: "Messenger"
+					},
+					{
 						share: "whatsapp",
 						label: "WhatsApp"
 					},
 					{
-						share: "linkedin",
-						label: "Linked In"
+						share: "telegram",
+						label: "Telegram"
+					},
+					{
+						share: "line",
+						label: "Line"
 					}
 				]
 			});

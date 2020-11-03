@@ -81,6 +81,7 @@
                                             </div>
                                             <div class="card-body text-right">
                                                 <h2 class="heading6 lp-0 mt-0 font-face1 text-right"><?php echo $row->post_title; ?></h2>
+                                                <p class="text-justify"><?= substr($row->post_description, 0, 120); ?></p>
                                             </div>
                                             <div class="card-footer">
                                                 <div class="article_author">

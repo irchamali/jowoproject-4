@@ -32,7 +32,7 @@
   background: #eb4823; }
   .jssocials-share-stumbleupon .jssocials-share-link:hover {
     background: #c93412; }
-
+ 
 .jssocials-share-whatsapp .jssocials-share-link {
   background: #29a628; }
   .jssocials-share-whatsapp .jssocials-share-link:hover {
@@ -52,6 +52,11 @@
   background: #7b519d; }
   .jssocials-share-viber .jssocials-share-link:hover {
     background: #61407b; }
+
+    .jssocials-share-instagram .jssocials-share-link {
+      background: #7b519d; }
+      .jssocials-share-instagram .jssocials-share-link:hover {
+        background: #61407b; }
 
 .jssocials-share-pocket .jssocials-share-link {
   background: #ef4056; }

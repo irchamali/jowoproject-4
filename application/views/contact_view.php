@@ -61,7 +61,9 @@
 								<!--POST LEAVE COMMENT-->
 								<div class="comments-heading text-center mb-30">
 									<hgroup>
-										<h2 class="font-face1 section-heading">Contact me</h2>
+										<div class="shadow-title shadow-gray unselectable parallax-1">PESAN</div>
+										<h2 class="font-face1 section-heading">Jika Anda Berminat</h2>
+										<h2 class="font-face1 section-heading">Segera Kirim Pesan ke Kami</h2>
 									</hgroup>
 								</div>
 								<?php echo $this->session->flashdata('msg'); ?>
@@ -109,7 +111,8 @@
 						<div class="col-md-10 col-md-offset-1">
 							<div class="form-subscribe mb-50 mb-sm-0">
 								<div class="col-sm-6 mb-sm-40">
-									<h2 class="heading5 mt-0 font-face1 white-color fw700 mb-0">Newsletter.</h2>
+									<h2 class="heading5 mt-0 font-face1 white-color fw700 mb-0">Ingin Mengenal kami lebih dekat?</h2>
+									<h2 class="heading5 mt-0 font-face1 white-color fw700 mb-0"><i class="fa fa-whatsapp"></i> (085730110225)</h2>
 								</div>
 								<div class="col-sm-6">
 									<form class="form-inline" action="<?php echo site_url('subscribe'); ?>" method="post">

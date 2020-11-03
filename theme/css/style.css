@@ -1309,7 +1309,15 @@ box-shadow:none;
 	color:#fff;	
 }
 .btn.bg-white{
-	background-color:#fff;        
+	background-color:#61ce70;        
+	color:#212121;
+}
+.btn.bg-green{
+	background-color:#61ce70;        
+	color:#212121;
+}
+.btn.bg-pink{
+	background-color:#fe4ea8;        
 	color:#212121;
 }
 .btn.bg-color{
