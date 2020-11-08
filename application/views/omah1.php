@@ -15,6 +15,7 @@
     <link rel="shortcut icon" href="<?= base_url('theme/images/' . $icon); ?>">
     <link rel="stylesheet" href="<?= base_url('theme/css/bootstrap.min.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('omah/css/style.css'); ?>">
+
     <!-- SEO Tag -->
     <meta name="description" content="<?php echo $site_desc; ?>" />
     <link rel="canonical" href="<?php echo site_url(); ?>" />
@@ -39,8 +40,6 @@
     <script src="<?= base_url('omah/js/typed.min.js'); ?>"></script>
     <script src="<?= base_url('omah/js/jquery.waypoints.min.js'); ?>"></script>
     <script src="<?= base_url('omah/js/owl.carousel.min.js'); ?>"></script>
-
-    <link rel="stylesheet" href="<?= base_url('omah/css/main.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('omah/css/owl.carousel.min.css'); ?>" />
     <link rel="stylesheet" href="<?= base_url('theme/css/font-awesome.min.css'); ?>" />
     <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
@@ -58,18 +57,14 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#"><img src="<?= base_url('assets/images/logodekor.png'); ?>" width="145" height="40" alt=""></a></div>
+            <div class="logo"><a href="#"><img src="<?= base_url('theme/images/logoPutih1.png'); ?>" width="145" height="40" alt=""></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#teams" class="menu-btn">Product</a></li>
-                <li><a href="#services" class="menu-btn">Services</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#teams" class="menu-btn">Testimoni</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
-                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                    Cek
-                </button> -->
-                <!-- <li><a type="button" class="btn-search" data-toggle="modal" data-target="#exampleModal"><span class="fa fa-search"></span></a></li> -->
+                <li><a href="#about" class="menu-btn">Profil</a></li>
+                <li><a href="#services" class="menu-btn">Galeri</a></li>
+                <li><a href="#skills" class="menu-btn">Informasi</a></li>
+                <li><a href="#teams" class="menu-btn">Pengurus</a></li>
+                <li><a href="#contact" class="menu-btn">Kontak</a></li>
                 <li><a href="javascript:void(0)" class="btn-search"><span class="fa fa-search"></span></a></li>
             </ul>
             <div class="menu-btn">
@@ -82,90 +77,42 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-3">Ambalan Dinding</div>
-                <div class="text-3"><span class="typing"></span></div>
-                <a href="https://api.whatsapp.com/send?phone=+6285730110225&text=Hello%20kak,%20Saya%20sudah%20mengecek%20produk%20Anda%20dan%20Saya%20Tertarik%20untuk.."><i class="fa fa-whatsapp"></i> Order Now</a>
+                <div class="text-1">Assalamualaikum</div>
+                <div class="text-2"><span class="typing"></span></div>
+                <div class="text-3">Silahkan Mendaftar <span class="typing-3"></span></div>
+                <!-- <div class="text-1">Irham | Founder</div> -->
+                <a href="https://forms.gle/M1wC98JY3fTSjBje8">DAFTAR</a>
             </div>
         </div>
     </section>
 
+
     <!-- about section start -->
-    <!-- <section class="about" id="about">
+    <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">Product</h2>
+            <h2 class="title">Profil</h2>
             <div class="about-content">
                 <div class="column left">
                     <img src="<?= base_url() . 'theme/images/' . $about_img; ?>">
                 </div>
                 <div class="column right">
-                    <div class="text">Mau dibuatkan <span class="typing-2"></span>?</div>
-                    <p><?php echo $about_desc; ?></p>
+                    <div class="text"><span class="typing-2"></span></div>
+                    <p><?= substr($about_desc, 0, 980); ?></p>
+                    <a href="<?= base_url('/about'); ?>">Read More</a>
                 </div>
             </div>
-        </div>
-    </section> -->
-
-    <!-- Seksi baru ini -->
-    <section class="about" id="about">
-        <div class="max-width">
-            <!-- <h2 class="title">Ambalan Dinding</h2> -->
-            <!-- <h2 class="text-center">Ada <s>PROMO</s></h2> -->
-            <div class="split">
-                <?php foreach ($testimonial->result() as $test) : ?>
-                    <div class="featured__item">
-                        <img src="<?php echo base_url() . 'assets/images/' . $test->testimonial_image; ?>" class="img" alt="" />
-                        <p class="featured__details"><span class="price"><?php echo $test->testimonial_name; ?></span><?php echo $test->testimonial_content; ?></p>
-                    </div>
-                    <!-- <div class="featured__item">
-                    <img src="<?= base_url() . 'theme/images/' . $about_img; ?>" alt="" class="featured__img">
-                    <p class="featured__details"><span class="price">Rp. 200K</span>product name</p>
-                </div>
-                <div class="featured__item">
-                    <img src="<?= base_url() . 'theme/images/' . $about_img; ?>" alt="" class="featured__img">
-                    <p class="featured__details"><span class="price">Rp. 300K</span>product name</p>
-                </div>
-                <div class="featured__item">
-                    <img src="<?= base_url() . 'theme/images/' . $about_img; ?>" alt="" class="featured__img">
-                    <p class="featured__details"><span class="price">Rp. 400K</span>product name</p>
-                </div> -->
-                <?php endforeach; ?>
-            </div>
-        </div><br>
-        <div class="max-width">
-            <article class="product shoe-red spacing">
-                <img src="<?= base_url() . 'theme/images/' . $bg_1; ?>" alt="" class="product__image">
-                <h3 class="product__title"><?= $name_1; ?></h3>
-                <p class="product__description"><?php echo $about_desc; ?></p>
-                <a href="<?= base_url('/product'); ?>" class="btn">Order now</a>
-            </article>
-            <!-- <article class="product shoe-white shoe-left spacing">
-                <img src="<?= base_url() . 'theme/images/' . $bg_2; ?>" alt="" class="product__image">
-                <h3 class="product__title"><?= $name_2; ?></h3>
-                <p class="product__description"><?= $caption_2; ?></p>
-                <a href="<?= base_url('/product'); ?>" class="btn">Order now</a>
-            </article>
-            <article class="product shoe-blue spacing">
-                <img src="<?= base_url() . 'theme/images/' . $bg_3; ?>" alt="" class="product__image">
-                <h3 class="product__title"><?= $name_3; ?></h3>
-                <p class="product__description"><?= $caption_3; ?></p>
-                <a href="<?= base_url('/product'); ?>" class="btn">Order now</a>
-            </article> -->
-            <br>
-
         </div>
     </section>
-
-
 
     <!-- services section start -->
     <section class="services" id="services">
         <div class="max-width">
             <h2 class="title">Galeri Foto</h2>
             <div class="carousel owl-carousel">
-                <?php foreach ($testimonial->result() as $test) : ?>
+                <?php foreach ($gallery->result() as $test) : ?>
                     <div class="card">
                         <div class="box">
-                            <img src="<?php echo base_url() . 'assets/images/' . $test->testimonial_image; ?>" class="img" alt="" />
+                            <img src="<?= base_url() . 'assets/images/' . $test->gallery_image; ?>" class="img" alt="" />
                             <div class="text"><?php echo $test->gallery_name; ?></div>
                         </div>
                     </div>
@@ -199,10 +146,28 @@
         </div>
     </section>
 
+    <!-- skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">Informasi</h2>
+            <div class="skills-content">
+                <?php foreach ($latest_post->result() as $row) : ?>
+                    <div class="column left">
+                        <div class="text"><?php echo $row->post_title; ?></div>
+                        <p><?php echo $row->post_description; ?></p>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+            <div class="text-center">
+                <a href="<?= base_url('/blog'); ?>">Read More</a>
+            </div>
+        </div>
+    </section>
+
     <!-- teams section start -->
     <section class="teams" id="teams">
         <div class="max-width">
-            <h2 class="title">SLIDER</h2>
+            <h2 class="title">Pengurus</h2>
             <div class="carousel owl-carousel">
                 <?php foreach ($testimonial->result() as $test) : ?>
                     <div class="card">
@@ -221,45 +186,53 @@
     </section>
 
     <!-- contact section start -->
-    <!-- <section class="contact" id="contact">
+    <section class="contact" id="contact">
         <div class="max-width">
-            <h2 class="title">Contact me</h2>
+            <h2 class="title">Kontak</h2>
             <div class="contact-content">
                 <div class="column left">
-                    <div class="text">Get in Touch</div>
+                    <div class="text">Kunjungi kami di:</div>
+                    <!-- <p>Lokasi dan media sosial resmi kami:</p> -->
                     <div class="icons">
                         <div class="row">
-                            <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+                            <i class="fa fa-map-marker"></i>
                             <div class="info">
-                                <div class="head">Instagram</div>
-                                <div class="sub-title">instagram.com/mochiproject</div>
+                                <div class="head">Address</div>
+                                <div class="sub-title">Sukorejo, Bangorejo, Banyuwangi, Jawa Timur, Indonesia</div>
                             </div>
                         </div>
                         <div class="row">
-                            <a href="https://instagram.com"><i class="fa fa-twitter-square"></i></a>
-                            <div class="info">
-                                <div class="head">Twitter</div>
-                                <div class="sub-title">twitter.com/mochiproject</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <a href="https://instagram.com"><i class="fa fa-facebook-square"></i></a>
-                            <div class="info">
-                                <div class="head">Facebook</div>
-                                <div class="sub-title">facebook.com/mochiproject</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <a href="https://instagram.com"><i class="fa fa-envelope-square"></i></a>
+                            <i class="fa fa-envelope"></i>
                             <div class="info">
                                 <div class="head">Email</div>
-                                <div class="sub-title">mochiproject@gmail.com</div>
+                                <div class="sub-title">darulabror.skj@gmail.com</div>
                             </div>
                         </div>
+                        <div class="row">
+                            <i class="fa fa-whatsapp"></i>
+                            <div class="info">
+                                <div class="head">Telephone or Whatsapp</div>
+                                <div class="sub-title">081236868776/085399877328</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fa fa-instagram"></i>
+                            <div class="info">
+                                <div class="head">Instagram</div>
+                                <div class="sub-title">instagram.com/ponpesdarulabror</div>
+                            </div>
+                        </div>
+                        <!-- <div class="row">
+                            <i class="fa fa-youtube"></i>
+                            <div class="info">
+                                <div class="head">Youtube</div>
+                                <div class="sub-title">Ircham Ali</div>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="column right">
-                    <div class="text">Message me</div>
+                    <div class="text">Kirim pesan ke kami</div>
                     <?php echo $this->session->flashdata('msg'); ?>
                     <form method="post" action="<?php echo site_url('contact/send'); ?>" role="form" class="form">
                         <div class="fields">
@@ -271,19 +244,20 @@
                             </div>
                         </div>
                         <div class="field">
+                            <!-- <input type="text" placeholder="Subject" required> -->
                             <input type="text" name="subject" class="full_width" placeholder="Subject *" maxlength="100" required="">
                         </div>
                         <div class="field textarea">
                             <textarea name="message" class="full_width" rows="6" placeholder="Tulis pesan.. *" maxlength="400" required></textarea>
                         </div>
                         <div class="button">
-                            <button type="submit">Send message</button>
+                            <button type="submit">Kirim</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Modal Search-->
     <div class="modal fade" id="ModalSearch" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="z-index: 10000;">
@@ -305,12 +279,12 @@
 
     <!-- footer section start -->
     <footer>
-        <span>Created By <a href="https://www.jowokode.com">JowoKode</a> | <span class="fa fa-copyright"></span> 2020</span>
+        <span>Darul Abror Cyber | <span class="fa fa-copyright"></span> <a href="https://www.jowokode.com">JowoKode</a> 2020</span>
     </footer>
 
+    <script src="<?= base_url('theme/js/bootstrap.min.js') ?>"></script>
+    <script src="<?= base_url('theme/js/script.js') ?>"></script>
     <script src="<?= base_url('omah/js/script.js'); ?>"></script>
-    <script src="<?= base_url('theme/js/bootstrap.min.js'); ?>"></script>
-    <script src="<?= base_url('theme/js/script.js'); ?>"></script>
 </body>
 
 </html>

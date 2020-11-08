@@ -50,7 +50,7 @@ class Omah extends CI_Controller
 
         // $data['header'] = $this->load->view('head', $v, TRUE);
         // $data['footer'] = $this->load->view('footer', '', TRUE);
-
+ 
         $this->load->view('omah', $data);
     }
 }

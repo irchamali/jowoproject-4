@@ -111,7 +111,8 @@
                         <div class="col-md-10 col-md-offset-1">
                             <div class="form-subscribe mb-50 mb-sm-0">
                                 <div class="col-sm-6 mb-sm-40">
-                                    <h2 class="heading5 mt-0 font-face1 white-color fw700 mb-0">Newsletter.</h2>
+                                    <h2 class="heading5 mt-0 font-face1 white-color fw700 mb-0">Ingin Mengenal kami lebih dekat?</h2>
+                                    <button class="btn bg-white font-face1 white-color fw700 mb-0"><a href="https://api.whatsapp.com/send?phone=+6285730110225&text=Hello%20kak,%20Saya%20sudah%20mengecek%20produk%20Anda%20dan%20Saya%20Tertarik%20untuk.."><i class="fa fa-whatsapp white-color"></i> (085730110225)</a></button>
                                 </div>
                                 <div class="col-sm-6">
                                     <form class="form-inline" action="<?php echo site_url('subscribe'); ?>" method="post">

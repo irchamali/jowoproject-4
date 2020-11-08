@@ -29,7 +29,6 @@ html{
 /* all similar content styling codes */
 section{
     padding: 100px 0;
-    /* margin-bottom: 5px; */
 }
 .max-width{
     max-width: 1300px;
@@ -53,7 +52,7 @@ section .title{
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 23px;
+    margin-bottom: 60px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -72,7 +71,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: #fe4ea8;
+    color: #01812a;
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -89,7 +88,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background:  #fff;
+    background:  #02812a;
 }
 .navbar .max-width{
     display: flex;
@@ -97,16 +96,16 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo a{
-    color: #fe4ea8;
+    color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
 .navbar .logo a span{
-    color: #111;
+    color: #ffff00;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
-    color: #111;
+    color: #fff;
 }
 .navbar .menu li{
     list-style: none;
@@ -114,22 +113,22 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: #111;
+    color: #fff;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color:  #fe4ea8;
+    color:  #ffff00;
 }
 .navbar.sticky .menu li a:hover{
-    color: #fe4ea8;
+    color: #ffff00;
 }
 
 /* menu btn styling */
 .menu-btn{
-    color: #fe4ea8;
+    color: #fff;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -166,9 +165,9 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("../images/mochi-2.jpg") no-repeat center;
+    background: url("../images/banner-ponpesda.jpg") no-repeat center;
     height: 100vh;
-    color: #111;
+    color: #fff;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
@@ -183,36 +182,36 @@ section .title::after{
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
-    margin-left: -9px;
+    margin-left: -3px;
 }
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: #fe4ea8;
+    color: #ffff00;
     font-weight: 500;
 }
 .home .home-content a{
     display: inline-block;
-    background: #61ce70;
-    color: #fff;
+    background: #ffff00;
+    color: #111;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid #61ce70;
+    border: 2px solid #ffff00;
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: #61ce70;
+    color: #ffff00;
     background: none;
 }
 
 /* about section styling */
 .about .title::after{
-    content: "Mochi";
+    content: "Pesantren";
 }
 .about .about-content .left{
     width: 45%;
@@ -232,10 +231,9 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: #fe4ea8;
+    color: #01812a;
 }
 .about .about-content .right p{
-    font-size: 20px;
     text-align: justify;
 }
 .about .about-content .right a{
@@ -247,7 +245,7 @@ section .title::after{
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid #fe4ea8;
+    border: 2px solid #01812a;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
@@ -255,11 +253,10 @@ section .title::after{
     background: none;
 }
 
-
 /* services section styling */
-/* .services, .teams{
+.services, .teams{
     color:#fff;
-    background: #fff;
+    background: #111;
 }
 .services .title::before,
 .teams .title::before{
@@ -267,52 +264,6 @@ section .title::after{
 }
 .services .title::after,
 .teams .title::after{
-    background: #111;
-    content: "what i provide";
-}
-.services .serv-content .card{
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 20px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.services .serv-content .card:hover{
-    background: #fe4ea8;
-}
-.services .serv-content .card .box{
-    transition: all 0.3s ease;
-}
-.services .serv-content .card:hover .box{
-    transform: scale(1.05);
-}
-.services .serv-content .card i{
-    font-size: 50px;
-    color: #ffff00;
-    transition: color 0.3s ease;
-}
-.services .serv-content .card:hover i{
-    color: #fff;
-}
-.services .serv-content .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-} */
-
-/* services section styling */
-.services, .services{
-    color:#fff;
-    background: #111;
-}
-.services .title::before,
-.services .title::before{
-    background: #fff;
-}
-.services .title::after,
-.services .title::after{
     background: #111;
     content: "Kegiatan";
 }
@@ -393,12 +344,12 @@ section .title::after{
 }
 
 /* skills section styling */
+
 .skills .title::after{
-    content: "what i know";
+    content: "Pesantren";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
-    /* width: 45%; */
 }
 .skills .skills-content .left .text{
     font-size: 20px;
@@ -407,31 +358,39 @@ section .title::after{
 }
 .skills .skills-content .left p{
     text-align: justify;
-    font-size: 20px;
 }
 .skills .skills-content .left a{
     display: inline-block;
     background:  #111;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid  #fe4ea8;
+    border: 2px solid  #02812a;
     transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
-    color:  #fe4ea8;
+    color:  #02812a;
     background: none;
 }
-.skills .skills-content .right img{
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
+.skills a{
+    display: inline-block;
+    background: #02812a;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
     border-radius: 6px;
-    position: relative;
-    
+    border: 2px solid #02812a;
+    transition: all 0.3s ease;
+    /* align-items: center; */
+}
+.skills a:hover{
+    color:#02812a;
+    background: none;
 }
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
@@ -458,7 +417,7 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background:  #fe4ea8;
+    background:  #02812a;
 }
 .skills-content .right .html::before{
     width: 90%;
@@ -478,7 +437,7 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
-    content: "teams";
+    content: "Pesantren";
 }
 .teams .carousel .card{
     background: #222;
@@ -489,7 +448,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover{
-    background:  #fe4ea8;
+    background:  #02812a;
 }
 .teams .carousel .card .box{
     display: flex;
@@ -541,7 +500,7 @@ section .title::after{
 
 /* contact section styling */
 .contact .title::after{
-    content: "pesan ke kami";
+    content: "Pesantren";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -567,7 +526,7 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: #fe4ea8;
+    color: #02812a;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -621,8 +580,8 @@ section .title::after{
 .contact .right form .button button{
     width: 100%;
     height: 100%;
-    border: 2px solid #fe4ea8;
-    background: #fe4ea8;
+    border: 2px solid #02812a;
+    background: #111;
     color: #fff;
     outline: none;
     font-size: 20px;
@@ -632,13 +591,13 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .contact .right form .button button:hover{
-    color: #fe4ea8;
+    color: #02812a;
     background: none;
 }
 
 /* footer section styling */
 footer{
-    background: #fe4ea8;
+    background: #02812a;
     padding: 15px 23px;
     color: #fff;
     text-align: center;
@@ -685,7 +644,7 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 0;
-        background: #fff;
+        background: #02812a;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;

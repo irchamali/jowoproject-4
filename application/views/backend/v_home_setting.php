@@ -34,7 +34,7 @@
     <script src="<?php echo base_url() . 'assets/plugins/3d-bold-navigation/js/modernizr.js' ?>"></script>
     <script src="<?php echo base_url() . 'assets/plugins/offcanvasmenueffects/js/snap.svg-min.js' ?>"></script>
 
-
+ 
 </head>
 
 <body class="page-header-fixed  compact-menu  pace-done page-sidebar-fixed">
@@ -282,7 +282,7 @@
                                     <div class="form-group">
                                         <label for="input1" class="col-sm-2 control-label">Image 1</label>
                                         <div class="col-sm-10">
-                                            <input type="file" name="img_1" class="form-control" id="input1">
+                                            <input type="file" name="image_1" class="form-control" id="input1">
                                             <p class="help-block">Image Heading harus beresolusi 1000 x 1000 Pixels.</p>
                                             <img src="<?php echo base_url() . 'theme/images/' . $image_1; ?>" width="560" class="thumbnail">
                                         </div>
@@ -303,7 +303,7 @@
                                     <div class="form-group">
                                         <label for="input1" class="col-sm-2 control-label">Image 2</label>
                                         <div class="col-sm-10">
-                                            <input type="file" name="img_2" class="form-control" id="input1">
+                                            <input type="file" name="image_2" class="form-control" id="input1">
                                             <p class="help-block">Image Heading harus beresolusi 1000 x 1000 Pixels.</p>
                                             <img src="<?php echo base_url() . 'theme/images/' . $image_2; ?>" width="560" class="thumbnail">
                                         </div>
@@ -324,7 +324,7 @@
                                     <div class="form-group">
                                         <label for="input1" class="col-sm-2 control-label">Image 3</label>
                                         <div class="col-sm-10">
-                                            <input type="file" name="img_3" class="form-control" id="input1">
+                                            <input type="file" name="image_3" class="form-control" id="input1">
                                             <p class="help-block">Background Testimonial harus beresolusi 1000 x 1000 Pixels.</p>
                                             <img src="<?php echo base_url() . 'theme/images/' . $image_3; ?>" width="560" class="thumbnail">
                                         </div>

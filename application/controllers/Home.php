@@ -39,5 +39,5 @@ class Home extends CI_Controller
 		$data['header'] = $this->load->view('header', $v, TRUE);
 		$data['footer'] = $this->load->view('footer', '', TRUE);
 		$this->load->view('home_view', $data);
-	}
+	} 
 }

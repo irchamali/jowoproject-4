@@ -40,9 +40,9 @@ class Testimonial extends CI_Controller
 				$config['source_image'] = './assets/images/' . $gbr['file_name'];
 				$config['create_thumb'] = FALSE;
 				$config['maintain_ratio'] = FALSE;
-				$config['quality'] = '100%';
-				$config['width'] = 400;
-				$config['height'] = 600;
+				$config['quality'] = '80%';
+				$config['width'] = 800;
+				$config['height'] = 1000;
 				$config['new_image'] = './assets/images/' . $gbr['file_name'];
 				$this->load->library('image_lib', $config);
 				$this->image_lib->resize();
@@ -78,9 +78,9 @@ class Testimonial extends CI_Controller
 				$config['source_image'] = './assets/images/' . $gbr['file_name'];
 				$config['create_thumb'] = FALSE;
 				$config['maintain_ratio'] = FALSE;
-				$config['quality'] = '100%';
-				$config['width'] = 400;
-				$config['height'] = 600;
+				$config['quality'] = '80%';
+				$config['width'] = 800;
+				$config['height'] = 1000;
 				$config['new_image'] = './assets/images/' . $gbr['file_name'];
 				$this->load->library('image_lib', $config);
 				$this->image_lib->resize();

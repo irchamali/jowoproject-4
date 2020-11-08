@@ -12,13 +12,13 @@ class Setting_model extends CI_Model
 	function update_information($home_id, $name1, $name2, $name3, $caption1, $caption2, $caption3, $bg_1, $bg_2, $bg_3)
 	{
 		$this->db->set('home_name_1', $name1);
-		$this->db->set('home_name_2', $name2);
-		$this->db->set('home_name_3', $name3);
 		$this->db->set('home_caption_1', $caption1);
-		$this->db->set('home_caption_2', $caption2);
-		$this->db->set('home_caption_3', $caption3);
 		$this->db->set('home_bg_1', $bg_1);
+		$this->db->set('home_name_2', $name2);
+		$this->db->set('home_caption_2', $caption2);
 		$this->db->set('home_bg_2', $bg_2);
+		$this->db->set('home_name_3', $name3);
+		$this->db->set('home_caption_3', $caption3);
 		$this->db->set('home_bg_3', $bg_3);
 		$this->db->where('home_id', $home_id);
 		$this->db->update('tbl_home');
