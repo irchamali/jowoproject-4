@@ -10,7 +10,7 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="Ircham Ali" />
-    <link rel="shortcut icon" href="<?php echo base_url() . 'assets/images/favpink.png' ?>">
+    <link rel="shortcut icon" href="<?php echo base_url() . 'assets/images/fav.png' ?>">
 
     <!-- Styles -->
     <link href="<?php echo base_url() . 'assets/plugins/pace-master/themes/blue/pace-theme-flash.css' ?>" rel="stylesheet" />
@@ -26,6 +26,7 @@
     <link href="<?php echo base_url() . 'assets/plugins/datatables/css/jquery.datatables.min.css' ?>" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url() . 'assets/plugins/datatables/css/jquery.datatables_themeroller.css' ?>" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url() . 'assets/plugins/toastr/jquery.toast.min.css' ?>" rel="stylesheet" type="text/css" />
+    <link href="<?php echo base_url() . 'assets/plugins/summernote-master/summernote.css' ?>" rel="stylesheet" type="text/css" />
     <!-- Theme Styles -->
     <link href="<?php echo base_url() . 'assets/css/modern.min.css' ?>" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url() . 'assets/css/themes/pink.css' ?>" class="theme-color" rel="stylesheet" type="text/css" />
@@ -34,7 +35,7 @@
     <script src="<?php echo base_url() . 'assets/plugins/3d-bold-navigation/js/modernizr.js' ?>"></script>
     <script src="<?php echo base_url() . 'assets/plugins/offcanvasmenueffects/js/snap.svg-min.js' ?>"></script>
 
- 
+
 </head>
 
 <body class="page-header-fixed  compact-menu  pace-done page-sidebar-fixed">
@@ -48,7 +49,7 @@
                     </a>
                 </div>
                 <div class="logo-box">
-                    <a href="<?php echo site_url('backend/dashboard'); ?>" class="logo-text"><span>MOCHI</span></a>
+                    <a href="<?php echo site_url('backend/dashboard'); ?>" class="logo-text"><span>DEKDING</span></a>
                 </div><!-- Logo Box -->
                 <div class="search-button">
                     <a href="javascript:void(0);" class="waves-effect waves-button waves-classic show-search"><i class="fa fa-search"></i></a>
@@ -267,66 +268,71 @@
                             <div class="panel panel-white">
 
                                 <div class="panel-body">
-                                    <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Name 1</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" name="name1" class="form-control" id="input1" value="<?php echo $name_1; ?>" placeholder="Product Name">
-                                        </div>
-                                    </div>
+
                                     <div class="form-group">
                                         <label for="input1" class="col-sm-2 control-label">Caption 1</label>
                                         <div class="col-sm-10">
-                                            <input type="text" name="caption1" class="form-control" id="input1" value="<?php echo $caption_1; ?>" placeholder="Product Caption">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Image 1</label>
-                                        <div class="col-sm-10">
-                                            <input type="file" name="image_1" class="form-control" id="input1">
-                                            <p class="help-block">Image Heading harus beresolusi 1000 x 1000 Pixels.</p>
-                                            <img src="<?php echo base_url() . 'theme/images/' . $image_1; ?>" width="560" class="thumbnail">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Name 2</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" name="name2" class="form-control" id="input1" value="<?php echo $name_2; ?>" placeholder="Product Name">
+                                            <input type="text" name="caption1" class="form-control" id="input1" value="<?php echo $caption_1; ?>" placeholder="Site Name">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="input1" class="col-sm-2 control-label">Caption 2</label>
                                         <div class="col-sm-10">
-                                            <input type="text" name="caption2" class="form-control" id="input1" value="<?php echo $caption_2; ?>" placeholder="Product Caption">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Image 2</label>
-                                        <div class="col-sm-10">
-                                            <input type="file" name="image_2" class="form-control" id="input1">
-                                            <p class="help-block">Image Heading harus beresolusi 1000 x 1000 Pixels.</p>
-                                            <img src="<?php echo base_url() . 'theme/images/' . $image_2; ?>" width="560" class="thumbnail">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Name 3</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" name="name3" class="form-control" id="input1" value="<?php echo $name_3; ?>" placeholder="Product Name">
+                                            <input type="text" name="caption2" class="form-control" id="input1" value="<?php echo $caption_2; ?>" placeholder="Site Title">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="input1" class="col-sm-2 control-label">Caption 3</label>
                                         <div class="col-sm-10">
-                                            <input type="text" name="caption3" class="form-control" id="input1" value="<?php echo $caption_3; ?>" placeholder="Product Caption">
+                                            <input type="text" name="caption3" class="form-control" id="input1" value="<?php echo $caption_3; ?>" placeholder="Site Title">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Title 1</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="title1" class="form-control" id="input1" value="<?php echo $title_1; ?>" placeholder="Site Title">
+                                        </div>
+                                    </div>
+                                    <!-- <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Title 1</label>
+                                        <div class="col-sm-10">
+                                            <textarea name="title1" class="form-control" id="summernote" placeholder="Judul atau promo"><?php echo $title_1; ?></textarea>
+                                        </div>
+                                    </div> -->
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Title 2</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="title2" class="form-control" id="input1" value="<?php echo $title_2; ?>" placeholder="Site Title">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Image 3</label>
+                                        <label for="input1" class="col-sm-2 control-label">Title 3</label>
                                         <div class="col-sm-10">
-                                            <input type="file" name="image_3" class="form-control" id="input1">
-                                            <p class="help-block">Background Testimonial harus beresolusi 1000 x 1000 Pixels.</p>
-                                            <img src="<?php echo base_url() . 'theme/images/' . $image_3; ?>" width="560" class="thumbnail">
+                                            <input type="text" name="title3" class="form-control" id="input1" value="<?php echo $title_3; ?>" placeholder="Site Title">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Title 4</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="title4" class="form-control" id="input1" value="<?php echo $title_4; ?>" placeholder="Site Title">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Image Heading</label>
+                                        <div class="col-sm-10">
+                                            <input type="file" name="img_heading" class="form-control" id="input1">
+                                            <p class="help-block">Image Heading harus beresolusi 1800 x 1110 Pixels.</p>
+                                            <img src="<?php echo base_url() . 'theme/images/' . $image_heading; ?>" width="560" class="thumbnail">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Image Promo</label>
+                                        <div class="col-sm-10">
+                                            <input type="file" name="img_testimonial" class="form-control" id="input1">
+                                            <p class="help-block">Background Testimonial harus beresolusi 300 x 300 Pixels.</p>
+                                            <img src="<?php echo base_url() . 'theme/images/' . $image_testimonial; ?>" width="560" class="thumbnail">
                                         </div>
                                     </div>
 
@@ -336,9 +342,11 @@
                                             <button type="submit" class="btn btn-success btn-lg">UPDATE</button>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
+
 
                     </form>
                 </div><!-- Row -->
@@ -367,6 +375,24 @@
     <script src="<?php echo base_url() . 'assets/plugins/datatables/js/jquery.datatables.min.js' ?>"></script>
     <script src="<?php echo base_url() . 'assets/js/modern.min.js' ?>"></script>
     <script src="<?php echo base_url() . 'assets/plugins/toastr/jquery.toast.min.js' ?>"></script>
+    <script src="<?php echo base_url() . 'assets/plugins/summernote-master/summernote.min.js' ?>"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#summernote').summernote({
+                height: 50,
+                toolbar: [
+                    ['style', ['style']],
+                    ['font', ['bold', 'italic', 'underline', 'clear', 'strikethrough']],
+                    ['fontname', ['fontname']],
+                    ['fontsize', ['fontsize']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['view', ["fullscreen", "codeview", "help"]],
+                ]
+
+            });
+        });
+    </script>
     <!--Toast Message-->
     <?php if ($this->session->flashdata('msg') == 'success') : ?>
         <script type="text/javascript">

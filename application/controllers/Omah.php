@@ -26,31 +26,31 @@ class Omah extends CI_Controller
         $data['post_header_3'] = $this->zome_model->get_post_header_3();
         $data['latest_post'] = $this->zome_model->get_latest_post();
         $data['popular_post'] = $this->zome_model->get_popular_post();
-
         $home = $this->db->get('tbl_home', 1)->row();
-        $data['name_1'] = $home->home_name_1;
-        $data['name_2'] = $home->home_name_2;
-        $data['name_3'] = $home->home_name_3;
         $data['caption_1'] = $home->home_caption_1;
         $data['caption_2'] = $home->home_caption_2;
         $data['caption_3'] = $home->home_caption_3;
-        $data['bg_1'] = $home->home_bg_1;
-        $data['bg_2'] = $home->home_bg_2;
-        $data['bg_3'] = $home->home_bg_3;
-
+        $data['title_1'] = $home->home_title_1;
+        $data['title_2'] = $home->home_title_2;
+        $data['title_3'] = $home->home_title_3;
+        $data['title_4'] = $home->home_title_4;
+        $data['bg_header'] = $home->home_bg_heading;
+        $data['bg_testimoni'] = $home->home_bg_testimonial;
         $data['testimonial'] = $this->db->get('tbl_testimonial');
-        $site_info = $this->db->get('tbl_site', 1)->row();
 
         $site_info = $this->db->get('tbl_site', 1)->row();
         $about = $this->db->get('tbl_about', 1)->row();
         $data['about_img'] = $about->about_image;
+        $data['about_img2'] = $about->about_image2;
         $data['about_desc'] = $about->about_description;
+        $data['about_desc2'] = $about->about_description2;
+        $data['about_desc3'] = $about->about_description3;
         $v['logo'] =  $site_info->site_logo_header;
         $data['icon'] = $site_info->site_favicon;
 
         // $data['header'] = $this->load->view('head', $v, TRUE);
         // $data['footer'] = $this->load->view('footer', '', TRUE);
- 
+
         $this->load->view('omah', $data);
     }
 }

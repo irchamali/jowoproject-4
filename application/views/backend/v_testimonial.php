@@ -11,7 +11,7 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
-    <link rel="shortcut icon" href="<?php echo base_url() . 'assets/images/favpink.png' ?>">
+    <link rel="shortcut icon" href="<?php echo base_url() . 'assets/images/fav.png' ?>">
     <!-- Styles -->
     <link href="<?php echo base_url() . 'assets/plugins/pace-master/themes/blue/pace-theme-flash.css' ?>" rel="stylesheet" />
     <link href="<?php echo base_url() . 'assets/plugins/uniform/css/uniform.default.min.css' ?>" rel="stylesheet" />
@@ -263,7 +263,7 @@
                             <div class="panel-body">
                                 <button type="button" class="btn btn-success m-b-sm" data-toggle="modal" data-target="#myModal">Add New</button>
 
-                                <table id="mytable" class="display table" style="width: 100%; cellspacing: 0;">
+                                <table id="mytable" class="display table" style="width: 100%; ">
                                     <thead>
                                         <tr>
                                             <th>No</th>

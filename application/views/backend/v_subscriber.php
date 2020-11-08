@@ -10,7 +10,7 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="Ircham Ali" />
-    <link rel="shortcut icon" href="<?php echo base_url() . 'assets/images/favpink.png' ?>">
+    <link rel="shortcut icon" href="<?php echo base_url() . 'assets/images/fav.png' ?>">
 
     <!-- Styles -->
     <link href="<?php echo base_url() . 'assets/plugins/pace-master/themes/blue/pace-theme-flash.css' ?>" rel="stylesheet" />
@@ -264,7 +264,7 @@
                             <div class="panel-body">
 
                                 <div class="table-responsive">
-                                    <table id="data-table" class="display table" style="width: 100%; cellspacing: 0;">
+                                    <table id="data-table" class="display table" style="width: 100%; ">
                                         <thead>
                                             <tr>
                                                 <th style="width: 100px;">No</th>

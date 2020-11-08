@@ -14,7 +14,7 @@ $b = $data->row_array();
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="Ircham Ali" />
-    <link rel="shortcut icon" href="<?php echo base_url() . 'assets/images/favpink.png' ?>">
+    <link rel="shortcut icon" href="<?php echo base_url() . 'assets/images/fav.png' ?>">
 
     <!-- Styles -->
     <link href="<?php echo base_url() . 'assets/plugins/pace-master/themes/blue/pace-theme-flash.css' ?>" rel="stylesheet" />

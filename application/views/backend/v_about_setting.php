@@ -10,7 +10,7 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="Ircham Ali" />
-    <link rel="shortcut icon" href="<?php echo base_url() . 'assets/images/favpink.png' ?>">
+    <link rel="shortcut icon" href="<?php echo base_url() . 'assets/images/fav.png' ?>">
 
     <!-- Styles -->
     <link href="<?php echo base_url() . 'assets/plugins/pace-master/themes/blue/pace-theme-flash.css' ?>" rel="stylesheet" />
@@ -49,7 +49,7 @@
                     </a>
                 </div>
                 <div class="logo-box">
-                    <a href="<?php echo site_url('backend/dashboard'); ?>" class="logo-text"><span>MOCHI</span></a>
+                    <a href="<?php echo site_url('backend/dashboard'); ?>" class="logo-text"><span>DEKDING</span></a>
                 </div><!-- Logo Box -->
                 <div class="search-button">
                     <a href="javascript:void(0);" class="waves-effect waves-button waves-classic show-search"><i class="fa fa-search"></i></a>
@@ -270,18 +270,38 @@
 
                                 <div class="panel-body">
                                     <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Image</label>
+                                        <label for="input1" class="col-sm-2 control-label">Gambar 1</label>
                                         <div class="col-sm-10">
                                             <input type="file" name="img_about" class="form-control" id="input1">
-                                            <p class="help-block">Image Heading harus beresolusi 456 x 470 Pixels.</p>
+                                            <p class="help-block">Image Produk harus beresolusi 450 x 500 Pixels.</p>
                                             <img src="<?php echo base_url() . 'theme/images/' . $about_img; ?>" width="300" class="thumbnail">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Gambar 2</label>
+                                        <div class="col-sm-10">
+                                            <input type="file" name="img_about2" class="form-control" id="input1">
+                                            <p class="help-block">Image Produk harus beresolusi 450 x 500 Pixels.</p>
+                                            <img src="<?php echo base_url() . 'theme/images/' . $about_img2; ?>" width="300" class="thumbnail">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Description</label>
+                                        <label for="input1" class="col-sm-2 control-label">Deskripsi 1</label>
                                         <div class="col-sm-10">
                                             <textarea name="description" class="form-control" id="summernote" placeholder="Description"><?php echo $about_desc; ?></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Deskripsi 2</label>
+                                        <div class="col-sm-10">
+                                            <textarea name="description2" class="form-control" id="summernote2" placeholder="Description2"><?php echo $about_desc2; ?></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Deskripsi 3</label>
+                                        <div class="col-sm-10">
+                                            <textarea name="description3" class="form-control" id="summernote3" placeholder="Description3"><?php echo $about_desc3; ?></textarea>
                                         </div>
                                     </div>
 
@@ -295,13 +315,11 @@
                                 </div>
                             </div>
                         </div>
-
-
                     </form>
                 </div><!-- Row -->
             </div><!-- Main Wrapper -->
             <div class="page-footer">
-                <p class="no-s"><?php echo date('Y'); ?> &copy; Powered by JowoKode.</p>
+                <p class="no-s"><?php echo date('Y'); ?> &copy; Powered by Ircham Ali.</p>
             </div>
         </div><!-- Page Inner -->
     </main><!-- Page Content -->
@@ -329,10 +347,47 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#summernote').summernote({
-                height: 300,
+                height: 100,
                 toolbar: [
                     ['style', ['style']],
                     ['font', ['bold', 'italic', 'underline', 'clear']],
+                    ['fontname', ['fontname']],
+                    ['fontsize', ['fontsize']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['view', ["fullscreen", "codeview", "help"]],
+                ]
+
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#summernote2').summernote({
+                height: 100,
+                toolbar: [
+                    ['style', ['style']],
+                    ['font', ['bold', 'italic', 'underline', 'clear']],
+                    ['fontname', ['fontname']],
+                    ['fontsize', ['fontsize']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['view', ["fullscreen", "codeview", "help"]],
+                ]
+
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#summernote3').summernote({
+                height: 100,
+                toolbar: [
+                    ['style', ['style']],
+                    ['font', ['bold', 'italic', 'underline', 'clear']],
+                    ['fontname', ['fontname']],
                     ['fontsize', ['fontsize']],
                     ['color', ['color']],
                     ['para', ['ul', 'ol', 'paragraph']],

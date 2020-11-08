@@ -41,8 +41,8 @@ class Testimonial extends CI_Controller
 				$config['create_thumb'] = FALSE;
 				$config['maintain_ratio'] = FALSE;
 				$config['quality'] = '80%';
-				$config['width'] = 800;
-				$config['height'] = 1000;
+				$config['width'] = 350;
+				$config['height'] = 440;
 				$config['new_image'] = './assets/images/' . $gbr['file_name'];
 				$this->load->library('image_lib', $config);
 				$this->image_lib->resize();
@@ -79,8 +79,8 @@ class Testimonial extends CI_Controller
 				$config['create_thumb'] = FALSE;
 				$config['maintain_ratio'] = FALSE;
 				$config['quality'] = '80%';
-				$config['width'] = 800;
-				$config['height'] = 1000;
+				$config['width'] = 350;
+				$config['height'] = 450;
 				$config['new_image'] = './assets/images/' . $gbr['file_name'];
 				$this->load->library('image_lib', $config);
 				$this->image_lib->resize();

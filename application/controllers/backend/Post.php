@@ -53,7 +53,7 @@ class Post extends CI_Controller
 				$config['source_image'] = './assets/images/' . $img['file_name'];
 				$config['create_thumb'] = FALSE;
 				$config['maintain_ratio'] = FALSE;
-				$config['quality'] = '100%';
+				$config['quality'] = '60%';
 				$config['width'] = 500;
 				$config['height'] = 320;
 				$config['new_image'] = './assets/images/' . $img['file_name'];
@@ -114,7 +114,7 @@ class Post extends CI_Controller
 				$config['source_image'] = './assets/images/' . $img['file_name'];
 				$config['create_thumb'] = FALSE;
 				$config['maintain_ratio'] = FALSE;
-				$config['quality'] = '100%';
+				$config['quality'] = '60%';
 				$config['width'] = 500;
 				$config['height'] = 320;
 				$config['new_image'] = './assets/images/' . $img['file_name'];
@@ -213,7 +213,7 @@ class Post extends CI_Controller
 				$config['source_image'] = './assets/images/' . $data['file_name'];
 				$config['create_thumb'] = FALSE;
 				$config['maintain_ratio'] = TRUE;
-				$config['quality'] = '100%';
+				$config['quality'] = '60%';
 				$config['width'] = 800;
 				$config['height'] = 800;
 				$config['new_image'] = './assets/images/' . $data['file_name'];
